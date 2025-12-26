@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".NotifikasiOpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header: Back + Judul tengah -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/outline_arrow_left_alt_24"
+                android:contentDescription="@string/btn_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNotificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifikasi"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#111111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Kartu utama: tepi hijau, sudut besar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#C6E29E">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- ======== Hari ini ======== -->
+                <TextView
+                    android:id="@+id/tvTodayHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hari ini"
+                    android:textStyle="bold"
+                    android:textColor="#111111"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Container notifikasi "Hari ini" (isi lewat Java) -->
+                <LinearLayout
+                    android:id="@+id/containerToday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Garis hijau tipis -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#9BD156"
+                    android:layout_marginVertical="8dp" />
+
+                <!-- ======== Minggu ini ======== -->
+                <TextView
+                    android:id="@+id/tvWeekHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minggu ini"
+                    android:textStyle="bold"
+                    android:textColor="#111111"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Container notifikasi "Minggu ini" (isi lewat Java) -->
+                <LinearLayout
+                    android:id="@+id/containerWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
