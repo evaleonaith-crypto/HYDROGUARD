@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    
+    tools:context=".PeranActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/dd" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HydroGuard"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#3C663C"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Tombol Admin (hijau) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Admin"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:cornerRadius="24dp"
+        app:backgroundTint="#A5D62D"
+        app:rippleColor="#33227A14" />
+
+    <!-- Tombol Operator (abu-abu) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operator"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:cornerRadius="24dp"
+        app:backgroundTint="#CFCFCF"
+        app:rippleColor="#33111111" />
+
+</LinearLayout>
