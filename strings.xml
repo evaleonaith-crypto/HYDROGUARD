@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =========================
+         APLIKASI / UMUM
+    ========================== -->
+    <string name="app_name">HydroGuard</string>
+
+    <string name="back">Kembali</string>
+    <string name="btn_back">Kembali</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <string name="delete">Hapus</string>
+    <string name="edit">Ubah</string>
+
+    <!-- Content descriptions (aksesibilitas) -->
+    <string name="cd_back">Tombol kembali</string>
+    <string name="cd_check">Setujui</string>
+    <string name="cd_close">Tolak</string>
+    <string name="cd_weather_icon">Ikon cuaca</string>
+    <string name="cd_notifications">Buka notifikasi</string>
+    <string name="cd_settings">Buka pengaturan</string>
+    <string name="cd_control">Buka kontrol</string>
+
+    <!-- Pesan umum -->
+    <string name="msg_pump_on">Pompa dinyalakan</string>
+    <string name="msg_pump_off">Pompa dimatikan</string>
+    <string name="msg_login_admin_success">Login admin berhasil</string>
+    <string name="msg_login_operator_success">Login operator berhasil</string>
+
+    <!-- =========================
+         PILIH PERAN
+    ========================== -->
+    <string name="enter_as_admin">Admin</string>
+    <string name="enter_as_operator">Operator</string>
+
+    <!-- =========================
+         LOGIN
+    ========================== -->
+    <string name="admin_login_title">Login Admin</string>
+    <string name="admin_login_subtitle">Masuk untuk mengelola sistem</string>
+    <string name="operator_login_title">Login Operator</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_password">Password</string>
+    <string name="remember_me">Ingat saya</string>
+    <string name="forgot_password">Lupa kata sandi?</string>
+    <string name="login_admin">Masuk</string>
+    <string name="login_operator">Masuk</string>
+    <string name="admin_login_footer_hint">Gunakan akun admin resmi.</string>
+    <string name="dont_have_account">Belum memiliki akun?</string>
+    <string name="have_account">Sudah memiliki akun?</string>
+    <string name="login">Masuk</string>
+
+    <!-- Validasi & pesan error -->
+    <string name="error_required">Harus diisi</string>
+    <string name="error_invalid_email">Format email tidak valid</string>
+    <string name="error_password_short">Password minimal 6 karakter</string>
+    <string name="error_password_mismatch">Konfirmasi password tidak sama</string>
+    <string name="login_failed">Login gagal. Periksa email dan password.</string>
+
+    <!-- =========================
+         REGISTER OPERATOR
+    ========================== -->
+    <string name="register">Daftar</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="phone">No Hp</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+    <string name="role">Role</string>
+    <string name="role_operator">Operator</string>
+    <string name="by_registering_you_agree">
+        Dengan mendaftar, Anda setuju pada ketentuan yang berlaku.
+    </string>
+    <string name="register_success">Pendaftaran berhasil.</string>
+
+    <!-- =========================
+         DASHBOARD / BERANDA ADMIN
+    ========================== -->
+    <string name="title_control">Kontrol</string>
+    <string name="menu_notification">Notifikasi</string>
+    <string name="menu_setting">Pengaturan</string>
+
+    <string name="weather_title">Cuaca (Weather)</string>
+    <string name="weather_clear">Cerah (Clear)</string>
+    <string name="rain_sensor">Rain sensor</string>
+    <string name="sensor_ldr">Sensor/LDR</string>
+
+    <string name="pump_status">Status Pompa</string>
+    <string name="relay_module">Relay Module</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="soil_moisture">Soil Moisture</string>
+    <string name="temperature_unit_c">°C</string>
+    <string name="humidity_unit_pct">%</string>
+
+    <!-- =========================
+         KONTROL MANUAL
+    ========================== -->
+    <string name="title_control_screen">Kontrol manual</string>
+    <string name="mode_manual">Manual</string>
+    <string name="mode_auto">Otomatis</string>
+    <string name="btn_pump_on">NYALAKAN POMPA</string>
+    <string name="btn_pump_off">MATIKAN POMPA</string>
+
+    <string name="status_pump_auto">Status pompa: Otomatis</string>
+    <string name="status_pump_on">Status pompa: Menyala</string>
+    <string name="status_pump_off">Status pompa: Mati</string>
+
+    <!-- =========================
+         NOTIFIKASI
+    ========================== -->
+    <string name="notif_title">Notifikasi</string>
+    <string name="notif_title_operator">Notifikasi Operator</string>
+    <string name="today">Hari ini</string>
+    <string name="this_week">Minggu ini</string>
+
+    <!-- Template pesan notifikasi (kalau nanti dinamis) -->
+    <string name="notif_request_operator">%1$s ingin menjadi operator</string>
+    <string name="notif_irrigation_success">Penyiraman berhasil dilakukan %1$s</string>
+    <string name="notif_soil_dry">Peringatan : Tanah kering! %1$s</string>
+    <string name="notif_rain_detected">Hujan terdeteksi. Penyiraman ditunda. %1$s</string>
+    <string name="notif_pump_failed">Pompa gagal aktif. %1$s</string>
+    <string name="time_wita">WITA</string>
+
+    <!-- Aksi notifikasi -->
+    <string name="approve">Setujui</string>
+    <string name="reject">Tolak</string>
+
+    <!-- =========================
+         PENGATURAN (SETTINGS)
+    ========================== -->
+    <string name="setting_title">Pengaturan Sistem</string>
+    <string name="device_connection">Koneksi Perangkat</string>
+    <string name="wifi_name">Nama Wifi</string>
+    <string name="change_connection">GANTI KONEKSI</string>
+    <string name="auto_schedule">Jadwal Otomatis</string>
+    <string name="morning">Pagi</string>
+    <string name="evening">Sore</string>
+    <string name="status_device">Status Perangkat</string>
+    <string name="status_online">Status: Online</string>
+    <string name="status_offline">Status: Offline</string>
+    <string name="signal_strength">Kekuatan Sinyal WiFi</string>
+    <string name="last_sync">Terakhir Sinkron</string>
+
+    <!-- Pola teks untuk SettingsActivity (kalau mau dipakai dari Java) -->
+    <string name="label_wifi_name_prefix">Nama Wifi:</string>
+    <string name="label_schedule_morning">Pagi:</string>
+    <string name="label_schedule_evening">Sore:</string>
+
+    <!-- =========================
+         TEMPLATE / NAVIGASI FRAGMENT
+         (boleh dibiarkan untuk kompatibilitas)
+    ========================== -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- =========================
+         DESKRIPSI THEME & STYLE
+         (untuk dokumentasi / laporan)
+    ========================== -->
+    <string name="desc_theme_hydroguard">
+        Tema utama HydroGuard berbasis Material 3 Light tanpa ActionBar,
+        dengan status bar transparan, navigation bar putih, dan warna utama hijau brandGreen
+        yang konsisten di seluruh tampilan.
+    </string>
+
+    <string name="desc_widget_hg_button">
+        Style tombol utama HydroGuard dengan latar belakang hijau brandGreen,
+        teks dan ikon berwarna brandOnGreen, serta sudut membulat 12dp untuk tampilan modern.
+    </string>
+
+    <string name="desc_widget_hg_button_outlined">
+        Style tombol outline HydroGuard yang menggunakan warna hijau brandGreen
+        pada garis pinggir serta teks dan ikon, sehingga selaras dengan tombol utama.
+    </string>
+
+    <string name="desc_widget_hg_button_text">
+        Style text button HydroGuard dengan teks dan ikon berwarna hijau brandGreen,
+        cocok untuk aksi sekunder atau tautan tanpa latar belakang tebal.
+    </string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
+
+    <string name="error_invalid_phone">Nomor HP tidak valid</string>
+    <string name="error_password_not_match">Password dan konfirmasi tidak sama</string>
+    <string name="msg_register_operator_success">Pendaftaran operator berhasil</string>
+
+
+
+        <!-- Toolbar / section -->
+        <string name="title_dashboard">Dashboard</string>
+        <string name="title_kelola_tempat">Kelola Tempat</string>
+        <string name="title_monitoring_sensor">Monitoring Sensor</string>
+
+        <!-- Info admin -->
+        <string name="label_admin_info">Admin</string>
+        <string name="label_admin_email_default">admin@hydroguard.com</string>
+
+        <!-- Kelola Operator -->
+        <string name="title_kelolah_operator">Kelola Operator</string>
+        <string name="hint_search_operator">Cari nama / email / username</string>
+        <string name="table_header_nama">Nama</string>
+        <string name="table_header_role">Role</string>
+        <string name="table_header_no_wa">No. WA</string>
+        <string name="table_header_status">Status</string>
+        <string name="btn_tambah_operator">Tambah Operator</string>
+
+        <!-- Data contoh operator -->
+        <string name="operator_andi_budianto">Andi Budianto</string>
+        <string name="operator_sari_rahma">Sari Rahma</string>
+        <string name="operator_admin">Admin</string>
+        <string name="operator_operator">Operator</string>
+        <string name="operator_sample_wa">08xx-xxxxxxx</string>
+        <string name="status_aktif">Aktif</string>
+
+        <!-- Kelola Tempat -->
+        <string name="label_pilih_operator">Pilih Operator (yang sudah di-ACC)</string>
+        <string name="no_operator_approved">Belum ada operator yang disetujui</string>
+
+        <string name="tempat_lahan_cabai_pak_budi">Lahan Cabai Pak Budi</string>
+        <string name="tempat_greenhouse_a">Greenhouse A</string>
+        <string name="tempat_lokasi_parepare_kornang">Parepare, Kornang</string>
+        <string name="tempat_lokasi_parepare">Parepare</string>
+        <string name="tempat_otomatis_3_sensor_kelembapan">Otomatis • 3 sensor kelembapan</string>
+        <string name="tempat_otomatis_3_sensor">Otomatis • 3 sensor</string>
+        <string name="badge_warning">Warning</string>
+        <string name="badge_normal">Normal</string>
+
+        <!-- Monitoring Sensor -->
+        <string name="label_sensor_online">Sensor Online</string>
+        <string name="label_sensor_offline">Sensor Offline</string>
+        <string name="label_rata_rata">Rata-rata</string>
+        <string name="value_sensor_online">25</string>
+        <string name="value_sensor_offline">2</string>
+        <string name="value_rata_rata_kelembapan">42%</string>
+
+        <string name="monitor_farm2_zona_b">Farm 2 - Zona B</string>
+        <string name="monitor_farm2_value">35% • 28°C</string>
+        <string name="monitor_greenhouse_a_zona1">Greenhouse A - Zona 1</string>
+        <string name="monitor_greenhouse_a_value">29% • 29°C</string>
+
+        <!-- Menu -->
+        <string name="menu_filter">Filter</string>
+        <string name="menu_notifications">Notifikasi</string>
+        <string name="menu_settings">Pengaturan</string>
+    </resources>
+
+
+
