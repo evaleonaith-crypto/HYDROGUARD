@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:fillViewport="true"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header: back kiri, judul center -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/outline_arrow_left_alt_24"
+                android:contentDescription="@string/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/textPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Kartu: Koneksi Perangkat -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="18dp"
+            app:strokeColor="@color/dividerGreen"
+            app:strokeWidth="2dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Koneksi Perangkat"
+                    android:textStyle="bold"
+                    android:textColor="@color/hd_green_dark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvWifiName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nama Wifi: -"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Tekan tombol di bawah untuk membuka pengaturan WiFi perangkat."
+                    android:textColor="@color/textSecondary"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGantiKoneksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="14dp"
+                    android:text="GANTI KONEKSI"
+                    android:textAllCaps="true"
+                    android:textColor="@color/hd_green_dark"
+                    android:textStyle="bold"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="@color/brand_stroke"
+                    app:strokeWidth="2dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kartu: Jadwal Otomatis -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="18dp"
+            app:strokeColor="@color/dividerGreen"
+            app:strokeWidth="2dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jadwal Otomatis"
+                    android:textStyle="bold"
+                    android:textColor="@color/hd_green_dark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Tap untuk mengubah jam. Jadwal ini berlaku untuk semua akun."
+                    android:textColor="@color/textSecondary"
+                    android:textSize="12sp" />
+
+                <!-- Item: Pagi -->
+                <LinearLayout
+                    android:id="@+id/rowJadwalPagi"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/bg_edittext"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_schedule_24"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/tvJadwalPagi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:text="Pagi: [ - ]"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@android:drawable/ic_menu_edit"
+                        android:tint="#000000"
+                        android:contentDescription="@null"
+                        tools:ignore="UseAppTint" />
+                </LinearLayout>
+
+                <!-- Item: Sore -->
+                <LinearLayout
+                    android:id="@+id/rowJadwalSore"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="12dp"
+                    android:background="@drawable/bg_edittext"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_schedule_24"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/tvJadwalSore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:text="Sore: [ - ]"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@android:drawable/ic_menu_edit"
+                        android:tint="#000000"
+                        android:contentDescription="@null"
+                        tools:ignore="UseAppTint" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kartu: Status Perangkat (tetap seperti punyamu) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="18dp"
+            app:strokeColor="@color/dividerGreen"
+            app:strokeWidth="2dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status Perangkat"
+                    android:textStyle="bold"
+                    android:textColor="@color/hd_green_dark"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: Online"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/circle_online" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kekuatan Sinyal WiFi: Kuat"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terakhir Sinkron: Baru saja"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tombol keluar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="18dp"
+            android:text="KELUAR"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/hd_green_dark"
+            app:cornerRadius="24dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/brand_stroke"
+            app:backgroundTint="@android:color/white" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+    </LinearLayout>
+</ScrollView>
